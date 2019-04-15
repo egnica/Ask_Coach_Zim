@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ask Coach Zim</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Ask Coach Mike Zimmer a Question">
+        <meta name="keywords" content="Mike Zimmer, Question, NFL, Ask">
+        <meta name="author" content="Nicholas Egner">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+        <script src="main.js"></script>
+        <script>
+            
+        </script>
+        <style>      
+             
+        </style>
+
+        <!--write up-->
+        <!--    At first I was thinking of doing something like a magic 8 ball. As I thought more about
+                it I came up with the idea of making an application where the user could ask coach Zimmer
+                a question, and the reponce would be something Zimmer has said in a past interview. 
+                Being a Vikings fan, I thought other fans might get a kick out of it too.
+            
+                The plan is to have a user type a question in a text box and have something respond.
+                I am going to have several pre determined responces ready to que that Zimmer has said in an interview,
+                and when the user submits their question one of those responces will be displayed at random.
+
+                Thinking of fun ways to make the automated responces more specific to what the user is asking,
+                I added the radio buttons so when one of the buttons are selected it will register to a
+                responce that correlates closer to the question asked. So I will have questions pertaining to a Vikings player,
+                an opposing player, about the Vikings team, and an opposing team. I might even keep the typed in responce as a
+                variable that I can add back into some of the responces.
+            
+                The automated responce will appear in a div below where the question was asked.
+            
+                The whole process goes:
+                    User thinks of a question
+                    User selects a radio button that corralates with their question
+                    User types in question
+                    User submits question by clicking the submit button
+                    The responce is displayed in the div below
+                    User can than click a button that allows the for the page to refresh to ask another question -->
+    </head>
+    <body>
+
+    <header id="headstruct">
+        <h1>ASK COACH ZIM!!!</h1>
+    </header>
+    
+        <div id="direction"><h2>How to ask Zim?</h2>
+            <p>Have you every wanted to be a memenber of the press and ask coach Zimmer a pre or post game question? Here is your chance!<br>
+            <br>
+             1st: Choose your type of question.<br>
+            2nd: Type in your specific question.<br>
+            3rd: Submit your question and see the Coaches responce.</p></div>
+        <div id="picture1"><img src="zim1.png" alt="mikezimmer"></div>
+        <div id="radiobox">
+            <form>
+                <h2>Chose your type of question:</h2>
+                    <input type="radio" name="form"  class="rbutton" value="vikingsplayer" id="vikingsplayer"> About a Vikings Player<br>
+                    <input type="radio" name="form" class="rbutton" value="opposingplayer" id="opposingplayer"> About an Opposing Player<br>
+                    <input type="radio" name="form" class="rbutton" value="aboutvikings" id="aboutvikings"> About Vikings<br>  
+                    <input type="radio" name="form" class="rbutton" value="aboutopposing" id="aboutopposing" > About Opposing Team<br> 
+               
+            </form>
+        </div>
+        <div id="ask">
+            <h2>Ask Coach Zim:&nbsp;&nbsp;&nbsp;</h2>
+            <input type="text" id="question" name="question" placeholder="Enter your question for Coach..">
+            <input type="submit" onclick="questions()" value="Submit your question"> 
+        </div>
+        <div id="answer"><h2 id="something">&nbsp;&nbsp;The press is waiting for his answer</h2><img src="vikings.png" alt="vikings"></div>
+        <div id="talkzim"><img src="zimm2.png" alt="zimm2"></div>
+    
+    <footer>
+        <button onclick="submit"><a href="index1.html"> Ask coach another question </button>
+        
+       
+        
+    </footer>
+    <script>
+
+        /*function test() {
+            var values = ["Hello","zim","why","this","not","work"];
+            valueToUse = answer[][Math.floor(Math.random() * values.length)];
+        }*/
+         
+                /*var question_one= 
+                    document.getElementById("vikingsplayer"); 
+                    document.getElementById("answer").innerHTML=("That player is a work in progress...")
+                
+                var question_two=
+                    document.getElementById("opposingplayer");
+                    document.getElementById("answer").innerHTML=("That player is total garbage!")
+                
+                var question_three=
+                    document.getElementById("aboutvikings");
+                    document.getElementById("answer").innerHTML=("I feel like the fanbase is making too much of that situation.")
+                
+                var question_four=
+                    document.getElementById("aboutopposing");
+                    document.getElementById("answer").innerHTML=("It seems to me you havent done your research on that....")*/
+
+            
+
+               
+
+        </script>
+    </body>
+</html>
